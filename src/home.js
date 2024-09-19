@@ -13,16 +13,24 @@ function loadHomePage() {
 
     const hours = document.createElement('ul');
     hours.classList.add('hours');
-    const items = ['Sunday: Closed', 'Monday: Closed', 'Tuesday: 10am - 8pm', 'Wednesday: 10am - 8pm', 'Thursday: 10am - 8pm', 'Friday: 10am - 10pm', 'Saturday: 9am - 10pm'];
+    const items = [
+        'Sunday: Closed',
+        'Monday: Closed',
+        'Tuesday: 10am - 8pm',
+        'Wednesday: 10am - 8pm',
+        'Thursday: 10am - 8pm', 
+        'Friday: 10am - 10pm', 
+        'Saturday: 9am - 10pm'];
     items.forEach(itemText => {
         const hoursList = document.createElement('li');
         hoursList.textContent = itemText;
-        hours.appendChild('hoursList');
+        hours.appendChild(hoursList);
     })
 
+    content.appendChild(hours);
     content.appendChild(homeAbout);
     content.appendChild(homeTitle);
-    content.appendChild(hours);
+    
 
 }
 

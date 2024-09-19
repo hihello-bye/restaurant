@@ -8,7 +8,7 @@ function loadHomePage() {
     homeTitle.classList.add('home-title');
 
     const homeAbout = document.createElement('p');
-    homeAbout.textContent = 'Enjoy great food with Hello Kitty and all her friends! Our Sanrio inspired menu is as cute as it is tasty. Try different dishes and drinks inspired by Sanrio characters.';
+    homeAbout.textContent = 'Enjoy great food with Hello Kitty and all her friends! Our Sanrio inspired menu is as cute as it is tasty. Try different dishes and drinks inspired by your favorite Sanrio characters.';
     homeAbout.classList.add('home-about');
 
     content.appendChild(homeAbout);

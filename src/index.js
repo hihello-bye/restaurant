@@ -1,7 +1,7 @@
 import "./style.css";
 
-import {loadHomePage} from './src/home.js';
-import {loadMenuPage} from './src/menu.js';
+import {loadHomePage} from './home.js';
+import {loadMenuPage} from './menu.js';
 
 window.addEventListener('DOMContentLoaded', () => {
     loadHomePage();

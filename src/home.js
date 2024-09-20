@@ -7,6 +7,9 @@ function loadHomePage() {
     homeTitle.textContent = 'Sanrio Cafe';
     homeTitle.classList.add('home-title');
 
+    const mainContent = document.createElement('div');
+    mainContent.classList.add('main-content');
+
     const homeAbout = document.createElement('p');
     homeAbout.textContent = 'Enjoy great food with Hello Kitty and all her friends! Our Sanrio inspired menu is as cute as it is tasty. Try different dishes and drinks inspired by your favorite Sanrio characters.';
     homeAbout.classList.add('home-about');
@@ -31,10 +34,12 @@ function loadHomePage() {
     location.textContent = '974 Badtz Maru, London, England';
     location.classList.add('location');
     
+    mainContent.appendChild(homeAbout);
+    mainContent.appendChild(hours);
+    mainContent.appendChild(location);
+
     content.appendChild(homeTitle);
-    content.appendChild(homeAbout);
-    content.appendChild(hours);
-    content.appendChild(location);
+    content.appendChild(mainContent);
     
 
 }

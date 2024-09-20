@@ -14,6 +14,10 @@ function loadHomePage() {
     homeAbout.textContent = 'Enjoy great food with Hello Kitty and all her friends! Our Sanrio inspired menu is as cute as it is tasty. Try different dishes and drinks inspired by your favorite Sanrio characters.';
     homeAbout.classList.add('home-about');
 
+    const hoursHeader = document.createElement('h2');
+    hoursHeader.textContent = 'Opening Hours';
+    hoursHeader.classList.add('content-header');
+
     const hours = document.createElement('ul');
     hours.classList.add('hours');
     const items = [
@@ -30,12 +34,18 @@ function loadHomePage() {
         hours.appendChild(hoursList);
     })
 
+    const locationHeader = document.createElement('h2');
+    locationHeader.textContent = 'Location';
+    locationHeader.classList.add('content-header');
+
     const location = document.createElement('p');
     location.textContent = '974 Badtz Maru, London, England';
     location.classList.add('location');
     
     mainContent.appendChild(homeAbout);
+    mainContent.appendChild(hoursHeader);
     mainContent.appendChild(hours);
+    mainContent.appendChild(locationHeader);
     mainContent.appendChild(location);
 
     content.appendChild(homeTitle);

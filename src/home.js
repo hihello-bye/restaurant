@@ -14,6 +14,9 @@ function loadHomePage() {
     homeAbout.textContent = 'Enjoy great food with Hello Kitty and all her friends! Our Sanrio inspired menu is as cute as it is tasty. Try different dishes and drinks inspired by your favorite Sanrio characters.';
     homeAbout.classList.add('home-about');
 
+    const hoursContainer = document.createElement('div');
+    hoursContainer.classList.add('hours-container');
+
     const hoursHeader = document.createElement('h2');
     hoursHeader.textContent = 'Opening Hours';
     hoursHeader.classList.add('content-header');
@@ -34,6 +37,9 @@ function loadHomePage() {
         hours.appendChild(hoursList);
     })
 
+    hoursContainer.appendChild(hoursHeader);
+    hoursContainer.appendChild(hours);
+
     const locationContainer = document.createElement('div');
     locationContainer.classList.add('location-container');
 
@@ -49,8 +55,7 @@ function loadHomePage() {
     locationContainer.appendChild(location);
 
     mainContent.appendChild(homeAbout);
-    mainContent.appendChild(hoursHeader);
-    mainContent.appendChild(hours);
+    mainContent.appendChild(hoursContainer);
     mainContent.appendChild(locationContainer);
 
     content.appendChild(homeTitle);

@@ -33,10 +33,11 @@ nav {
     background-color: #93c5fd;
     border-radius: 25px;
     min-height: 40em;
-    min-width: 25em;
+    width: 36em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     color: white;
+    font-size: 24px;
 }

@@ -34,6 +34,9 @@ function loadHomePage() {
         hours.appendChild(hoursList);
     })
 
+    const locationContainer = document.createElement('div');
+    locationContainer.classList.add('location-container');
+
     const locationHeader = document.createElement('h2');
     locationHeader.textContent = 'Location';
     locationHeader.classList.add('content-header');
@@ -42,11 +45,13 @@ function loadHomePage() {
     location.textContent = '974 Badtz Maru, London, England';
     location.classList.add('location');
     
+    locationContainer.appendChild(locationHeader);
+    locationContainer.appendChild(location);
+
     mainContent.appendChild(homeAbout);
     mainContent.appendChild(hoursHeader);
     mainContent.appendChild(hours);
-    mainContent.appendChild(locationHeader);
-    mainContent.appendChild(location);
+    mainContent.appendChild(locationContainer);
 
     content.appendChild(homeTitle);
     content.appendChild(mainContent);

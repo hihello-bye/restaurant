@@ -30,10 +30,10 @@ function loadHomePage() {
     const location = document.createElement('p');
     location.textContent = '974 Badtz Maru, London, England';
     location.classList.add('location');
-
-    content.appendChild(hours);
-    content.appendChild(homeAbout);
+    
     content.appendChild(homeTitle);
+    content.appendChild(homeAbout);
+    content.appendChild(hours);
     content.appendChild(location);
     
 

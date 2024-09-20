@@ -11,7 +11,6 @@ body {
 nav {
     display: flex;
     justify-content: center;
-    padding: 10px;
     gap: 1.5em;
 }
 
@@ -40,4 +39,5 @@ nav {
     align-items: center;
     color: white;
     font-size: 24px;
+    padding: 20px;
 }

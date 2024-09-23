@@ -11,6 +11,7 @@ function loadMenuPage() {
     menuContent.classList.add('menu-content');
 
     content.appendChild(menuTitle);
+    content.appendChild(menuContent);
 
 };
 

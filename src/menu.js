@@ -13,6 +13,12 @@ function loadMenuPage() {
     const drinksContainer = document.createElement('div');
     drinksContainer.classList.add('drinks-header');
 
+    const drinksHeader = document.createElement('h2');
+    drinksHeader.textContent = 'Drinks';
+    drinksHeader.classList.add('menu-header');
+
+    drinksContainer.appendChild(drinksHeader);
+
     menuContent.appendChild(drinksContainer);
 
     content.appendChild(menuTitle);

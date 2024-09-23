@@ -10,6 +10,11 @@ function loadMenuPage() {
     const menuContent = document.createElement('div');
     menuContent.classList.add('menu-content');
 
+    const drinksContainer = document.createElement('div');
+    drinksContainer.classList.add('drinks-header');
+
+    menuContent.appendChild(drinksContainer);
+
     content.appendChild(menuTitle);
     content.appendChild(menuContent);
 

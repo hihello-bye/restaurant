@@ -30,6 +30,7 @@ function loadMenuPage() {
 
 
     drinksContainer.appendChild(drinksHeader);
+    drinksContainer.appendChild(drinkCinHeader);
     drinksContainer.appendChild(drinkCinImg);
     
 

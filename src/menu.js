@@ -65,9 +65,15 @@ function loadMenuPage() {
     savoryPomImg.src = savoryPomImage;
     savoryPomImg.classList.add('savory-img');
 
+    const savoryPomHeader = document.createElement('h2');
+    savoryPomHeader.textContent = 'Pompompurin Curry';
+    savoryPomHeader.classList.add('food-header');
+
 
     savoryContainer.appendChild(savoryHeader);
-    savoryContainer.appendChild(savoryPomImg);
+    savoryContainer.appendChild(savoryHeader);
+    savoryContainer.appendChild(savoryPomHeader);
+
 
 
     menuContent.appendChild(drinksContainer);

@@ -41,6 +41,10 @@ function loadMenuPage() {
     drinkKittyHeader.textContent = 'Hello Kitty Coffee';
     drinkKittyHeader.classList.add('drinks-header');
 
+    const drinkKittyPrice = document.createElement('h3');
+    drinkKittyPrice.textContent = '£2';
+    drinkKittyPrice.classList.add('drinks-price');
+
 
 
     drinksContainer.appendChild(drinksHeader);
@@ -48,6 +52,7 @@ function loadMenuPage() {
     drinksContainer.appendChild(drinkCinPrice);
     drinksContainer.appendChild(drinkCinImg);
     drinksContainer.appendChild(drinkKittyHeader);
+    drinksContainer.appendChild(drinkKittyPrice);
     drinksContainer.appendChild(drinkKittyImg);
     
     

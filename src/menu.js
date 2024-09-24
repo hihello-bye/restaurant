@@ -24,8 +24,10 @@ function loadMenuPage() {
     drinkCinImg.src = drinkCinImage;
     drinkCinImg.classList.add('drink-cin-img');
 
-    
-      
+    const drinkCinHeader = document.createElement('h3')
+    drinkCinHeader.textContent = 'Cinnamoroll Milkshake';
+    drinkCinHeader.classList.add('drinks-header');
+
 
     drinksContainer.appendChild(drinksHeader);
     drinksContainer.appendChild(drinkCinImg);

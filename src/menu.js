@@ -101,6 +101,10 @@ function loadMenuPage() {
     const sweetContainer = document.createElement('div');
     sweetContainer.classList.add('sweet-container');
 
+    const sweetHeader = document.createElement('h2');
+    sweetHeader.textContent = 'Sweet Dishes';
+    sweetHeader.classList.add('menu-header');
+
     const sweetMelodyImg = document.createElement('img');
     sweetMelodyImg.src = sweetMelodyImage;
     sweetMelodyImg.classList.add('sweet-img');
@@ -113,6 +117,7 @@ function loadMenuPage() {
     sweetMelodyPrice.textContent = '£9';
     sweetMelodyPrice.classList.add('food-price');
 
+    sweetContainer.appendChild(sweetHeader);
     sweetContainer.appendChild(sweetMelodyHeader);
     sweetContainer.appendChild(sweetMelodyPrice);
     sweetContainer.appendChild(sweetMelodyImg);

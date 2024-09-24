@@ -135,6 +135,14 @@ function loadMenuPage() {
     sweetCinImg.src = sweetCinImage;
     sweetCinImg.classList.add('sweet-img');
 
+    const sweetCinHeader = document.createElement('h2');
+    sweetCinHeader.textContent = 'Cinnamoroll Cupcake';
+    sweetCinHeader.classList.add('food-header');
+
+    const sweetCinPrice = document.createElement('h3');
+    sweetCinPrice.textContent = '£5';
+    sweetCinPrice.classList.add('food-price');
+
     sweetContainer.appendChild(sweetHeader);
     sweetContainer.appendChild(sweetMelodyHeader);
     sweetContainer.appendChild(sweetMelodyPrice);
@@ -142,6 +150,8 @@ function loadMenuPage() {
     sweetContainer.appendChild(sweetKittyHeader);
     sweetContainer.appendChild(sweetKittyPrice);
     sweetContainer.appendChild(sweetKittyImg);
+    sweetContainer.appendChild(sweetCinHeader);
+    sweetContainer.appendChild(sweetCinPrice);
     sweetContainer.appendChild(sweetCinImg);
 
 

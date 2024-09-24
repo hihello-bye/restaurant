@@ -3,6 +3,7 @@ import drinkKittyImage from './img/kittyCoffe.jpeg';
 import savoryPomImage from './img/pompompurinCurry.jpeg';
 import savoryMelodyImage from './img/melodyRice.jpeg';
 import sweetMelodyImage from './img/melodyMooncake.jpeg';
+import sweetKittyImage from './img/kittyTanghulu.jpeg';
 
 
 
@@ -117,10 +118,16 @@ function loadMenuPage() {
     sweetMelodyPrice.textContent = '£9';
     sweetMelodyPrice.classList.add('food-price');
 
+    const sweetKittyImg = document.createElement('img');
+    sweetKittyImg.src = sweetKittyImage;
+    sweetKittyImg.classList.add('sweet-img');
+
     sweetContainer.appendChild(sweetHeader);
     sweetContainer.appendChild(sweetMelodyHeader);
     sweetContainer.appendChild(sweetMelodyPrice);
     sweetContainer.appendChild(sweetMelodyImg);
+    sweetContainer.appendChild(sweetKittyImg);
+
 
     menuContent.appendChild(drinksContainer);
     menuContent.appendChild(savoryContainer);

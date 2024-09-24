@@ -1,6 +1,9 @@
 import drinkCinImage from './img/cinMilkshake.jpeg';
 import drinkKittyImage from './img/kittyCoffe.jpeg';
 import savoryPomImage from './img/pompompurinCurry.jpeg';
+import savoryMelodyImage from './img/melodyRice.jpeg';
+
+
 
 function loadMenuPage() {
     const content = document.getElementById('content');
@@ -73,11 +76,18 @@ function loadMenuPage() {
     savoryPomPrice.textContent = '£8';
     savoryPomPrice.classList.add('food-price');
 
+    const savoryMelodyImg = document.createElement('img');
+    savoryMelodyImg.src = savoryMelodyImage;
+    savoryMelodyImg.classList.add('savory-img');
+
+
 
     savoryContainer.appendChild(savoryHeader);
     savoryContainer.appendChild(savoryPomHeader);
     savoryContainer.appendChild(savoryPomPrice);
     savoryContainer.appendChild(savoryPomImg);
+    savoryContainer.appendChild(savoryMelodyImg);
+
 
 
 

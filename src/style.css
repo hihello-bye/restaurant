@@ -55,3 +55,8 @@ button {
 button:hover {
     background-color: #f472b6;
 }
+
+.drink-img {
+    height: 15em;
+    width: 15em;
+}

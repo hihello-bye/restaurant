@@ -1,5 +1,6 @@
 import drinkCinImage from './img/cinMilkshake.jpeg';
 import drinkKittyImage from './img/kittyCoffe.jpeg';
+import savoryPomImage from './img/pompompurinCurry.jpeg';
 
 function loadMenuPage() {
     const content = document.getElementById('content');
@@ -60,7 +61,14 @@ function loadMenuPage() {
     savoryHeader.textContent = 'Savory Dishes';
     savoryHeader.classList.add('menu-header');
 
+    const savoryPomImg = document.createElement('img');
+    savoryPomImg.src = savoryPomImage;
+    savoryPomImg.classList.add('savory-img');
+
+
     savoryContainer.appendChild(savoryHeader);
+    savoryContainer.appendChild(savoryPomImg);
+
 
     menuContent.appendChild(drinksContainer);
     menuContent.appendChild(savoryContainer);

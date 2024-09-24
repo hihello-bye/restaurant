@@ -122,10 +122,20 @@ function loadMenuPage() {
     sweetKittyImg.src = sweetKittyImage;
     sweetKittyImg.classList.add('sweet-img');
 
+    const sweetKittyHeader = document.createElement('h2');
+    sweetKittyHeader.textContent = 'Hello Kitty Tanghulu';
+    sweetKittyHeader.classList.add('food-header');
+
+    const sweetKittyPrice = document.createElement('h3');
+    sweetKittyPrice.textContent = '£6';
+    sweetKittyPrice.classList.add('food-price');
+
     sweetContainer.appendChild(sweetHeader);
     sweetContainer.appendChild(sweetMelodyHeader);
     sweetContainer.appendChild(sweetMelodyPrice);
     sweetContainer.appendChild(sweetMelodyImg);
+    sweetContainer.appendChild(sweetKittyHeader);
+    sweetContainer.appendChild(sweetKittyPrice);
     sweetContainer.appendChild(sweetKittyImg);
 
 

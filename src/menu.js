@@ -1,4 +1,5 @@
 import drinkCinImage from './img/cinMilkshake.jpeg';
+import drinkKittyImage from './img/kittyCoffe.jpeg';
 
 function loadMenuPage() {
     const content = document.getElementById('content');
@@ -22,7 +23,7 @@ function loadMenuPage() {
     
     const drinkCinImg = document.createElement('img');
     drinkCinImg.src = drinkCinImage;
-    drinkCinImg.classList.add('drink-cin-img');
+    drinkCinImg.classList.add('drink-img');
 
     const drinkCinHeader = document.createElement('h3')
     drinkCinHeader.textContent = 'Cinnamoroll Milkshake';
@@ -32,11 +33,18 @@ function loadMenuPage() {
     drinkCinPrice.textContent = '£3';
     drinkCinPrice.classList.add('drinks-price');
 
+    const drinkKittyImg = document.createElement('img');
+    drinkKittyImg.src = drinkKittyImage;
+    drinkKittyImg.classList.add('drink-img');
+
+
 
     drinksContainer.appendChild(drinksHeader);
     drinksContainer.appendChild(drinkCinHeader);
     drinksContainer.appendChild(drinkCinPrice);
     drinksContainer.appendChild(drinkCinImg);
+    drinksContainer.appendChild(drinkKittyImg);
+    
     
 
     menuContent.appendChild(drinksContainer);

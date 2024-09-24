@@ -1,3 +1,5 @@
+import drinkCinImage from './img/cinMilkshake.jpeg';
+
 function loadMenuPage() {
     const content = document.getElementById('content');
 
@@ -17,12 +19,13 @@ function loadMenuPage() {
     drinksHeader.textContent = 'Drinks';
     drinksHeader.classList.add('menu-header');
 
-    const drinkCin = document.createElement('img');
-    drinkCin.src = 'img/cinMilkshake.jpeg';
+    
+    const drinkCinImg = document.createElement('img');
+    drinkCinImg.src = drinkCinImage;
       
 
     drinksContainer.appendChild(drinksHeader);
-    drinksContainer.appendChild(drinkCin);
+    drinksContainer.appendChild(drinkCinImg);
     
 
     menuContent.appendChild(drinksContainer);

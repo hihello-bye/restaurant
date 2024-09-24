@@ -37,12 +37,17 @@ function loadMenuPage() {
     drinkKittyImg.src = drinkKittyImage;
     drinkKittyImg.classList.add('drink-img');
 
+    const drinkKittyHeader = document.createElement('h3');
+    drinkKittyHeader.textContent = 'Hello Kitty Coffee';
+    drinkKittyHeader.classList.add('drinks-header');
+
 
 
     drinksContainer.appendChild(drinksHeader);
     drinksContainer.appendChild(drinkCinHeader);
     drinksContainer.appendChild(drinkCinPrice);
     drinksContainer.appendChild(drinkCinImg);
+    drinksContainer.appendChild(drinkKittyHeader);
     drinksContainer.appendChild(drinkKittyImg);
     
     

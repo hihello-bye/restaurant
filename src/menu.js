@@ -69,10 +69,15 @@ function loadMenuPage() {
     savoryPomHeader.textContent = 'Pompompurin Curry';
     savoryPomHeader.classList.add('food-header');
 
+    const savoryPomPrice = document.createElement('h3');
+    savoryPomPrice.textContent = '£8';
+    savoryPomPrice.classList.add('food-price');
+
 
     savoryContainer.appendChild(savoryHeader);
-    savoryContainer.appendChild(savoryHeader);
     savoryContainer.appendChild(savoryPomHeader);
+    savoryContainer.appendChild(savoryPomPrice);
+    savoryContainer.appendChild(savoryPomImg);
 
 
 

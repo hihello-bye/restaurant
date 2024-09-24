@@ -45,11 +45,6 @@ function loadMenuPage() {
     drinkKittyPrice.textContent = '£2';
     drinkKittyPrice.classList.add('drinks-price');
 
-    const savoryContainer = document.createElement('div');
-    savoryContainer.classList.add('savory-container');
-
-
-
     drinksContainer.appendChild(drinksHeader);
     drinksContainer.appendChild(drinkCinHeader);
     drinksContainer.appendChild(drinkCinPrice);
@@ -57,8 +52,15 @@ function loadMenuPage() {
     drinksContainer.appendChild(drinkKittyHeader);
     drinksContainer.appendChild(drinkKittyPrice);
     drinksContainer.appendChild(drinkKittyImg);
-    
-    
+
+    const savoryContainer = document.createElement('div');
+    savoryContainer.classList.add('savory-container');
+
+    const savoryHeader = document.createElement('h2');
+    savoryHeader.textContent = 'Savory Dishes';
+    savoryHeader.classList.add('menu-header');
+
+    savoryContainer.appendChild(savoryHeader);
 
     menuContent.appendChild(drinksContainer);
     menuContent.appendChild(savoryContainer);

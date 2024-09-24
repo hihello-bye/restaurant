@@ -2,6 +2,8 @@ import drinkCinImage from './img/cinMilkshake.jpeg';
 import drinkKittyImage from './img/kittyCoffe.jpeg';
 import savoryPomImage from './img/pompompurinCurry.jpeg';
 import savoryMelodyImage from './img/melodyRice.jpeg';
+import sweetMelodyImage from './img/melodyMooncake.jpeg';
+
 
 
 
@@ -99,6 +101,11 @@ function loadMenuPage() {
     const sweetContainer = document.createElement('div');
     sweetContainer.classList.add('sweet-container');
 
+    const sweetMelodyImg = document.createElement('img');
+    sweetMelodyImg.src = sweetMelodyImage;
+    sweetMelodyImg.classList.add('sweet-img');
+
+    sweetContainer.appendChild(sweetMelodyImg);
 
     menuContent.appendChild(drinksContainer);
     menuContent.appendChild(savoryContainer);

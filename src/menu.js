@@ -45,6 +45,9 @@ function loadMenuPage() {
     drinkKittyPrice.textContent = '£2';
     drinkKittyPrice.classList.add('drinks-price');
 
+    const savoryContainer = document.createElement('div');
+    savoryContainer.classList.add('savory-container');
+
 
 
     drinksContainer.appendChild(drinksHeader);

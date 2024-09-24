@@ -22,6 +22,9 @@ function loadMenuPage() {
     
     const drinkCinImg = document.createElement('img');
     drinkCinImg.src = drinkCinImage;
+    drinkCinImg.classList.add('drink-cin-img');
+
+    
       
 
     drinksContainer.appendChild(drinksHeader);

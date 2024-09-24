@@ -13,7 +13,7 @@ function loadMenuPage() {
     menuContent.classList.add('menu-content');
 
     const drinksContainer = document.createElement('div');
-    drinksContainer.classList.add('drinks-header');
+    drinksContainer.classList.add('drinks-container');
 
     const drinksHeader = document.createElement('h2');
     drinksHeader.textContent = 'Drinks';

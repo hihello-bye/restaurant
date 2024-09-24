@@ -17,12 +17,12 @@ function loadMenuPage() {
     drinksHeader.textContent = 'Drinks';
     drinksHeader.classList.add('menu-header');
 
-    const drinkMelody = document.createElement('img');
-    drinkMelody.src = './img/melodyMilkshake.jpeg';
+    const drinkCin = document.createElement('img');
+    drinkCin.src = 'img/cinMilkshake.jpeg';
       
 
     drinksContainer.appendChild(drinksHeader);
-    drinksContainer.appendChild(drinkMelody);
+    drinksContainer.appendChild(drinkCin);
     
 
     menuContent.appendChild(drinksContainer);

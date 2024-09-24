@@ -61,6 +61,7 @@ function loadMenuPage() {
     
 
     menuContent.appendChild(drinksContainer);
+    menuContent.appendChild(savoryContainer);
 
     content.appendChild(menuTitle);
     content.appendChild(menuContent);

@@ -105,6 +105,16 @@ function loadMenuPage() {
     sweetMelodyImg.src = sweetMelodyImage;
     sweetMelodyImg.classList.add('sweet-img');
 
+    const sweetMelodyHeader = document.createElement('h2');
+    sweetMelodyHeader.textContent = 'My Melody Mooncakes';
+    sweetMelodyHeader.classList.add('food-header');
+
+    const sweetMelodyPrice = document.createElement('h3');
+    sweetMelodyPrice.textContent = '£9';
+    sweetMelodyPrice.classList.add('food-price');
+
+    sweetContainer.appendChild(sweetMelodyHeader);
+    sweetContainer.appendChild(sweetMelodyPrice);
     sweetContainer.appendChild(sweetMelodyImg);
 
     menuContent.appendChild(drinksContainer);

@@ -80,12 +80,23 @@ function loadMenuPage() {
     savoryMelodyImg.src = savoryMelodyImage;
     savoryMelodyImg.classList.add('savory-img');
 
+    const savoryMelodyHeader = document.createElement('h2');
+    savoryMelodyHeader.textContent = 'My Melody Curry';
+    savoryMelodyHeader.classList.add('food-header');
+
+    const savoryMelodyPrice = document.createElement('h3');
+    savoryMelodyPrice.textContent = '£8';
+    savoryMelodyPrice.classList.add('food-price');
+
+
 
 
     savoryContainer.appendChild(savoryHeader);
     savoryContainer.appendChild(savoryPomHeader);
     savoryContainer.appendChild(savoryPomPrice);
     savoryContainer.appendChild(savoryPomImg);
+    savoryContainer.appendChild(savoryMelodyHeader);
+    savoryContainer.appendChild(savoryMelodyPrice);
     savoryContainer.appendChild(savoryMelodyImg);
 
 

@@ -2,7 +2,7 @@ body {
     background-color: #fbcfe8;
 }
 
-.home-title {
+.home-title, .menu-title {
     text-align: center;
     color: white;
     font-size: 72px;
@@ -28,7 +28,7 @@ nav {
     align-items: center;
 }
 
-.main-content {
+.main-content, .menu-content {
     background-color: #93c5fd;
     border-radius: 25px;
     min-height: 40em;

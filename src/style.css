@@ -60,3 +60,11 @@ button:hover {
     height: 15em;
     width: 15em;
 }
+
+.menu-header {
+    font-size: 60px;
+}
+
+.drinks-price, .drinks-header {
+    font-size: 30px;
+}

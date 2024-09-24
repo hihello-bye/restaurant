@@ -28,9 +28,14 @@ function loadMenuPage() {
     drinkCinHeader.textContent = 'Cinnamoroll Milkshake';
     drinkCinHeader.classList.add('drinks-header');
 
+    const drinkCinPrice = document.createElement('h3');
+    drinkCinPrice.textContent = '£3';
+    drinkCinPrice.classList.add('drinks-price');
+
 
     drinksContainer.appendChild(drinksHeader);
     drinksContainer.appendChild(drinkCinHeader);
+    drinksContainer.appendChild(drinkCinPrice);
     drinksContainer.appendChild(drinkCinImg);
     
 
